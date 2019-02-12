@@ -1,10 +1,16 @@
 {
     "name": "AV-8B N/A V/STOL Harrier",
-    "weights" : {
-        "empty" : 13537,
-        "maxLanding" : 26000,
-        "maxTakeoff" : 31086,
-        "maxVerticalTakeoff" : 20500
+    "weights": {
+        "empty": 13537,
+        "maxLanding": 26000,
+        "maxTakeoff": 31086,
+        "maxVerticalTakeoff": 20500
     },
-    "pylons" : {}
+    "pylons": [
+        {
+            "number": 4,
+            "weight": 86,
+            "desc": "centerline"
+        }
+    ]
 }
