@@ -1,16 +1,30 @@
 <!doctype html>
-<html lang="fr" ng-app="dcsRearmApp">
+<html lang="fr">
+
 <head>
   <meta charset="utf-8">
   <title>DCS Rearm Calculator</title>
   <link rel="stylesheet" href="web/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
   <script src="js/script.js"></script>
 </head>
-<body>
-    <p>Airframe selector</p>
-    <p>
-        <div>AV-8B N/A V/STOL</div>
-        <div>M-2000C</div>
-    </p>
+
+<body ng-app="app" ng-controller="mainCtrl">
+  <p>Airframe selector</p>
+  <p>
+    <div>AV-8B N/A V/STOL</div>
+    <div>M-2000C</div>
+  </p>
+
+  <h1>DCS Rearm Configurator</h1>
+  <div>Empty weight : {{plane.weights.emptyWeight}}</div>
+
+  <div>
+    <label>Weights</label>
+    <ul>
+      <li ng-repeat="x in plane.weights">{{x}}</li>
+    </ul>
+  </div>
 </body>
+
 </html>
