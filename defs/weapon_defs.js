@@ -24,6 +24,9 @@ var weapons = {
         }
     },
     pods: {
+        liteningTpod: {
+
+        }
     },
     rockets: {
     }
